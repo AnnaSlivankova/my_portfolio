@@ -1,0 +1,19 @@
+.footer {
+    height: 80px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav {
+    border: 1px solid;
+    width: 200px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

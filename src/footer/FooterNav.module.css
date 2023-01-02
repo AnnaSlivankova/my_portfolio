@@ -1,0 +1,14 @@
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    width: 30px;
+    height: 30px;
+    background-color: deeppink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
