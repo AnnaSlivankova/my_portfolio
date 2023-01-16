@@ -1,0 +1,22 @@
+@import '../../styles/sass/variables';
+
+.title {
+  /*background-color: aquamarine;*/
+
+  text-transform: uppercase;
+  font-weight: 700;
+
+  border-bottom: 4px solid $primaryColor;
+  border-top: 4px solid $secondaryColor;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  color: $headingsTextColor;
+
+  margin-bottom: 15px;
+  //margin-bottom: 75px;
+  margin-top: 0;
+  padding: 5px 0;
+
+}

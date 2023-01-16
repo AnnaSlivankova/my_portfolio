@@ -1,21 +1,21 @@
 import React from 'react';
 import style from './Footer.module.css'
 import FooterNav from "./FooterNav";
+import {faLinkedin, faInstagramSquare, faGithubSquare, faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
     return (
         <div className={style.footer}>
-            <h6>Hanna Alexander Slivankova</h6>
-
+            <span className={style.rightText}>All rights reserved © Profile 2023</span>
             <div className={style.footerNav}>
                 <div className={style.wrap}>
-                    <FooterNav title={'1'}/>
-                    <FooterNav title={'2'}/>
-                    <FooterNav title={'3'}/>
-                    <FooterNav title={'4'}/>
+                    <FooterNav icon={faFacebookSquare} href={'https://www.facebook.com/anna.slivankova'}/>
+                    <FooterNav icon={faInstagramSquare} href={'https://www.instagram.com/anna_slivankova'}/>
+                    <FooterNav icon={faLinkedin} href={'https://www.linkedin.com/in/anna-slivankova-ba969a156'}/>
+                    <FooterNav icon={faGithubSquare} href={'https://github.com/AnnaSlivankova'}/>
                 </div>
             </div>
-            <h6>All rights reserved © Portfolio 2023</h6>
         </div>
     );
 };

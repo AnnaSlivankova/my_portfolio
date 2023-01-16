@@ -1,0 +1,135 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.project {
+  width: 250px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .imgContainer {
+    width: 100%;
+    height: 200px;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      /*background-color: #109af7;*/
+      background-color: rgba(11, 154, 247, .5);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /*opacity: 0.4;*/
+    }
+
+    .link {
+      background-color: $primaryColor;
+      position: relative;
+      padding: 10px 20px;
+      z-index: 1;
+      color: $headingsTextColor;
+      text-decoration: none;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .title {
+      //font-family: "Roboto", sans-serif;
+      //font-size: 18px;
+      //line-height: 1.1;
+      //color: $headingsTextColor;
+
+      @include text($font, 18px, 1.1);
+      font-weight: 700;
+
+    }
+
+    .description {
+      @include text($font, 16px, 24px);
+      color: $descriptionTextColor;
+
+      //font-family: "Roboto", sans-serif;
+      //font-size: 16px;
+      //line-height: 24px;
+
+    }
+  }
+}
+
+
+/*.project {*/
+/*  width: 250px;*/
+/*  background-color: #fff;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.imgContainer {*/
+/*  width: 100%;*/
+/*  height: 200px;*/
+/*  background-color: deeppink;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+
+/*  background-size: cover;*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+
+/*  position: relative;*/
+/*}*/
+
+/*.imgContainer::before {*/
+/*  position: absolute;*/
+/*  content: "";*/
+/*  !*background-color: #109af7;*!*/
+/*  background-color: rgba(11, 154, 247, .5);*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  !*opacity: 0.4;*!*/
+/*}*/
+
+/*.link {*/
+/*  background-color: cadetblue;*/
+/*  position: relative;*/
+/*  padding: 10px 20px;*/
+/*  z-index: 1;*/
+/*}*/
+
+/*.projectInfo {*/
+/*  padding: 25px 20px;*/
+/*}*/
+
+/*.title {*/
+/*  font-weight: 700;*/
+/*  font-size: 18px;*/
+/*  line-height: 1.1;*/
+/*  font-family: "Roboto", sans-serif;*/
+/*  color: #333;*/
+/*}*/
+
+/*.description {*/
+/*  font-size: 16px;*/
+/*  color: #777;*/
+/*  font-family: "Roboto", sans-serif;*/
+/*  line-height: 24px;*/
+/*}*/
