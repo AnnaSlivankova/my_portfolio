@@ -53,7 +53,7 @@ const Contacts = () => {
                 <div>
                     <div className={style.info}>
                         <h4 className={style.smallTitle}>Details</h4>
-                        <p></p>
+                        <p>description</p>
                         <p><FontAwesomeIcon icon={faMapMarkerAlt} size='1x' color='#ddd'/><i className={style.i}></i>Minsk, Belarus</p>
                         <p><FontAwesomeIcon icon={faMobileAlt} size='1x' color='#ddd'/><i className={style.i}></i>+375 (25) 992 45 52</p>
                         <p><FontAwesomeIcon icon={faEnvelope} size='1x' color='#ddd'/><i className={style.i}></i>annslivankova@gmail.com</p>
