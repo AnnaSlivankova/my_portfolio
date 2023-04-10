@@ -1,0 +1,87 @@
+.welcomeBlock {
+  min-height: 70vh;
+  background-image: url("../assets/image/6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @media screen and (max-width: 920px) {
+    min-height: 50vh;
+  }
+  .container {
+    justify-content: center;
+
+    .textContainer {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+
+      .firstTitle {
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 40px;
+        @media screen and (max-width: 920px) {
+          font-size: 25px;
+          margin-bottom: 25px;
+          margin-top: 20px;
+
+        }
+        @media screen and (max-width: 580px) {
+          //font-size: 15px;
+        }
+      }
+
+      .secondTitle {
+        width: 100%;
+        margin-bottom: 50px;
+        font-size: 45px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        @media screen and (max-width: 920px) {
+          font-size: 30px;
+          margin-bottom: 35px;
+          height: 100px;
+        }
+        @media screen and (max-width: 580px) {
+          //font-size: 15px;
+        }
+      }
+
+      .button {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 1px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        transition: .3s;
+
+        display: inline-block;
+        margin-bottom: 0;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        background-image: none;
+
+        text-decoration: none;
+        @media screen and (max-width: 580px) {
+          font-size: 10px;
+          padding: 8px 10px;
+
+        }
+        &:hover {
+          background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c6ff, #0072ff);;
+          border: 2px solid #109af7;
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+}

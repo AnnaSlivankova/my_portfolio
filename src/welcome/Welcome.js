@@ -1,15 +1,11 @@
 import React from 'react';
-import style from './Welcome.module.css';
+import style from './Welcome.module.scss';
 import styleContainer from '../common/styles/Container.module.css'
 import TypewriterComponent from "typewriter-effect";
+import {Link} from "react-scroll";
 
 const Welcome = () => {
-    const handleScrollAbout = () => {
-        const element = document.getElementById('section-2');
-        if (element) {
-            element.scrollIntoView({behavior: 'smooth'});
-        }
-    }
+
     return (
         <div id='section-1' className={style.welcomeBlock}>
             <div className={`${styleContainer.container} ${style.container}`}>
@@ -24,7 +20,8 @@ const Welcome = () => {
                             }}
                         />
                     </div>
-                    <a className={style.button} href="#/" onClick={handleScrollAbout}>More about me</a>
+                    <Link className={style.button} to='section-2' spy={true}
+                          smooth={true} offset={-70} duration={500}>More about me</Link>
                 </div>
             </div>
         </div>

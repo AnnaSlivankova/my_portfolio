@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Footer.module.css'
-import FooterNav from "./FooterNav";
+import style from './Footer.module.scss'
+import FooterNav from "./footerNav/FooterNav";
 import {faLinkedin, faInstagramSquare, faGithubSquare, faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
 
 

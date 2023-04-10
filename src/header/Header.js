@@ -1,19 +1,16 @@
 import React from 'react';
-import style from './Header.module.css';
-import Navbar from "../navbar/Navbar";
+import style from './Header.module.scss';
+import Navbar from "./navbar/Navbar";
+import {Link} from "react-scroll";
+
 
 const Header = () => {
-    const handleScrollProfile = () => {
-        const element = document.getElementById('section-1');
-        if (element) {
-            element.scrollIntoView({behavior: 'smooth'});
-        }
-    }
 
     return (
         <div className={style.header}>
-                <a className={style.btnProfile} onClick={handleScrollProfile}>Profile</a>
-                <Navbar/>
+            <Link className={style.btnProfile} to='section-1' spy={true}
+                  smooth={true} offset={-70} duration={500}>Profile</Link>
+            <Navbar/>
         </div>
     );
 };

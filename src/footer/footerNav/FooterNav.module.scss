@@ -1,0 +1,19 @@
+.navContainer {
+  display: flex;
+  justify-content: center;
+
+  .link {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: #333333;
+    }
+  }
+}
+
+
+

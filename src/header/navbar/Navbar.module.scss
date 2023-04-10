@@ -1,0 +1,36 @@
+.nav {
+    width: 350px;
+    //width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222;
+    line-height: 20px;
+
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    cursor: pointer;
+    //border: 1px solid red;
+    @media screen and (max-width: 780px) {
+        //width: 100%;
+        //justify-content: center;
+        //gap: 20px;
+        //width: 100vh;
+    }
+    @media screen and (max-width: 784px) {
+        //justify-content: flex-start;
+    }
+    @media screen and (max-width: 512px) {
+        //width: 100%;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .active {
+        color: #109af7;
+    }
+}

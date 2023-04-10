@@ -1,14 +1,10 @@
 import React from 'react';
-import style from './HireMe.module.css'
+import style from './HireMe.module.scss'
 import styleContainer from "../common/styles/Container.module.css";
+import { Link } from "react-scroll";
 
 const HireMe = () => {
-    const handleScrollContacts = () => {
-        const element = document.getElementById('section-5');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
+
     return (
         <div className={style.hireMeBlock}>
             <div className={`${styleContainer.container} ${style.hireMeContainer}`}>
@@ -16,7 +12,7 @@ const HireMe = () => {
                     <h2 className={style.title}>I am currently available for Work</h2>
                 </div>
                 <div className={style.buttonContainer}>
-                    <a className={style.button} onClick={handleScrollContacts}>Hire Me</a>
+                    <Link className={style.button} to='section-5' spy={true} smooth={true} offset={-70} duration= {500}>Hire Me</Link>
                 </div>
             </div>
         </div>
