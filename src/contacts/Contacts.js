@@ -7,13 +7,11 @@ import {FormControl, FormLabel, Grid} from "@mui/material";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faMapMarkerAlt, faMobileAlt} from "@fortawesome/free-solid-svg-icons";
 
-
 export const Contacts = () => {
   return (
     <div id='section-5' className={style.contactsBlock}>
       <div className={`${styleContainer.container} ${style.contactsContainer}`}>
         <Title title={'Contact me'}/>
-        {/*<ContactForm1/>*/}
         <Grid container justifyContent={'center'}>
           <Grid item justifyContent={'center'}>
             <FormControl style={{maxWidth: '700px'}}>
@@ -21,7 +19,8 @@ export const Contacts = () => {
                 <h4 className={style.smallTitle}>Details</h4>
                 <p className={style.textarea}>
                   You can contact me by phone, indicated in the contact information or by using the
-                  contact form below. A few minutes after sending the message you will receive an email
+                  contact form below. A few minutes after sending the message you will receive an
+                  email
                   that your message has been received.
                 </p>
                 <p className={style.textarea}>
@@ -44,8 +43,6 @@ export const Contacts = () => {
             </FormControl>
           </Grid>
         </Grid>
-
-
       </div>
     </div>
   );

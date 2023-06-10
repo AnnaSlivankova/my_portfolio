@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.css'
 import Title from '../common/components/title/Title';
-import picImg from '../assets/image/me1.jpg';
+import picImg from '../assets/image/me.jpg';
 import cv from '../assets/Resume.pdf'
 
 const Main = () => {
