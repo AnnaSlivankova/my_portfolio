@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Contacts.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
-import Title from "../common/components/title/Title";
+import styleContainer from "../../common/styles/Container.module.css";
+import Title from "../../common/components/title/Title";
 import {ContactForm} from "./contactForm/ContactForm";
 import {FormControl, FormLabel, Grid} from "@mui/material";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

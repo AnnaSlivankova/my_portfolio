@@ -5,7 +5,7 @@ import style from "./ContactForm.module.scss";
 import React, { useState} from "react";
 import {styled} from "@mui/material/styles";
 import emailjs from "@emailjs/browser";
-import {SnackBar} from "../../common/components/SnackBar/SnackBar";
+import {SnackBar} from "../../../common/components/SnackBar/SnackBar";
 
 const CustomTextField = styled(TextField)({
   '& label.Mui-focused': {

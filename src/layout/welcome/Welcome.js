@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Welcome.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../../common/styles/Container.module.css'
 import TypewriterComponent from "typewriter-effect";
 import {Link} from "react-scroll";
 

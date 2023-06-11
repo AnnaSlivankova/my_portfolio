@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
-import Title from "../common/components/title/Title";
+import styleContainer from '../../common/styles/Container.module.css';
+import Title from "../../common/components/title/Title";
 import {SkillCircle} from "./skillCircle/SkillCircle";
 
 

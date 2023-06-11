@@ -1,11 +1,11 @@
-import Header from "./header/Header";
-import Main from "./main/Main";
-import Skills from "./skills/Skills";
-import {Projects} from "./projects/Projects";
-import {Contacts} from "./contacts/Contacts";
-import Footer from "./footer/Footer";
-import HireMe from "./hireMe/HireMe";
-import Welcome from "./welcome/Welcome";
+import Header from "./layout/header/Header";
+import Main from "./layout/main/Main";
+import Skills from "./layout/skills/Skills";
+import {Projects} from "./layout/projects/Projects";
+import {Contacts} from "./layout/contacts/Contacts";
+import Footer from "./layout/footer/Footer";
+import HireMe from "./layout/hireMe/HireMe";
+import Welcome from "./layout/welcome/Welcome";
 import {createTheme, ThemeProvider} from "@mui/material";
 
 function App() {

@@ -3,12 +3,12 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import tdlImg from '../../assets/image/2.jpg'
-import snImg from '../../assets/image/3.jpg'
-import libImg from '../../assets/image/5.jpg'
-import cImg from '../../assets/image/9.png'
-import waImg from '../../assets/image/8.png'
-import fpImg from '../../assets/image/4.jpg'
+import tdlImg from '../../../assets/image/2.jpg'
+import snImg from '../../../assets/image/3.jpg'
+import libImg from '../../../assets/image/5.jpg'
+import cImg from '../../../assets/image/9.png'
+import waImg from '../../../assets/image/8.png'
+import fpImg from '../../../assets/image/4.jpg'
 
 const images = [
     {

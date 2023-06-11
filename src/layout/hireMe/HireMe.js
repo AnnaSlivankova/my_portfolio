@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './HireMe.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../../common/styles/Container.module.css";
 import { Link } from "react-scroll";
 
 const HireMe = () => {
