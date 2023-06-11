@@ -25,10 +25,22 @@ const Header = () => {
   }
 
   return (
-    <div className={style.header}>
+    <div className={style.header}
+         style={{
+      transition: 'all 0.3s ease-in-out',
+      backgroundColor: isScrolled ? '#fff' : 'transparent',
+      boxShadow: isScrolled ? '0px 2px 5px rgba(0, 0, 0, 0.25)' : 'none'
+    }}>
+
+
+
       <Link className={style.btnProfile} to='section-1' spy={true}
-            smooth={true} offset={-70} duration={500}>Profile</Link>
-      <Navbar/>
+            smooth={true} offset={-70} duration={500}
+            style={{
+              color: isScrolled ? '#222' : '#fff',
+            }}
+      >Profile</Link>
+      <Navbar isScrolled={isScrolled}/>
     </div>
   );
 };
